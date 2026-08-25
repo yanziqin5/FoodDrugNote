@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FoodDrugNote" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- 全局窗口背景: 旧纸色 -->
+        <item name="android:windowBackground">@color/page_bg</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/page_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- 主色替换掉刺眼蓝 -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/primary_dark</item>
+        <item name="colorOnSecondary">@color/on_primary</item>
+
+        <!-- 表面/背景 -->
+        <item name="android:colorBackground">@color/page_bg</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+
+        <!-- 控件默认圆角 -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeSmall</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeMedium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeLarge</item>
+
+        <!-- 文本颜色 -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- 去掉刺眼强调色 -->
+        <item name="colorAccent">@color/primary</item>
+        <item name="colorControlNormal">@color/text_secondary</item>
+        <item name="colorControlActivated">@color/primary</item>
+        <item name="colorControlHighlight">@color/ripple</item>
+    </style>
+
+    <!-- 全局圆角 -->
+    <style name="ShapeSmall" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeMedium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeLarge" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <!-- 结果区域卡片样式 -->
+    <style name="ResultCard">
+        <item name="android:background">@drawable/bg_result_card</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+
+    <!-- 输入框样式 -->
+    <style name="InputField">
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:padding">14dp</item>
+    </style>
+</resources>

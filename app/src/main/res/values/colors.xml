@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== 全局背景: 旧纸张温柔暖米色 ===== -->
+    <color name="page_bg">#F5F0E8</color>          <!-- 页面底色: 旧纸米白 -->
+    <color name="card_bg">#FDF9F3</color>          <!-- 卡片底色: 暖白 -->
+    <color name="card_bg_pressed">#F0E8DB</color>  <!-- 卡片按压 -->
+    <color name="divider">#E2D7C5</color>          <!-- 分割线: 浅暖棕 -->
+
+    <!-- ===== 主色: 低饱和温暖棕 ===== -->
+    <color name="primary">#9B8570</color>           <!-- 主色: 麂皮暖棕 -->
+    <color name="primary_dark">#7A6756</color>      <!-- 主色深 -->
+    <color name="primary_light">#C4B5A5</color>     <!-- 主色浅 -->
+    <color name="primary_container">#E8DFD3</color> <!-- 主色容器 -->
+    <color name="on_primary">#FFFFFF</color>        <!-- 主色上文字 -->
+
+    <!-- ===== 辅色: 深褐 ===== -->
+    <color name="secondary">#8B7355</color>         <!-- 辅色 -->
+    <color name="secondary_container">#F0E8DA</color>
+
+    <!-- ===== 表面色 ===== -->
+    <color name="surface">#FDFAF5</color>
+    <color name="surface_variant">#EFE8DC</color>
+    <color name="on_surface">#4A3728</color>        <!-- 主文字: 深褐 -->
+
+    <!-- ===== 文字 ===== -->
+    <color name="text_primary">#4A3728</color>      <!-- 正文: 深暖棕 -->
+    <color name="text_secondary">#7A6756</color>    <!-- 副文: 中暖棕 -->
+    <color name="text_hint">#B8A590</color>         <!-- 提示: 浅暖棕 -->
+    <color name="text_on_card">#3E2E22</color>      <!-- 卡片上文字 -->
+
+    <!-- ===== 风险等级 ===== -->
+    <color name="high_risk_text">#B54A3A</color>    <!-- 高风险文字: 暖红棕 -->
+    <color name="high_risk_bg">#F5E4DC</color>      <!-- 高风险背景 -->
+    <color name="low_risk_text">#B57A3A</color>     <!-- 中风险文字: 暖琥珀 -->
+    <color name="low_risk_bg">#F5ECDB</color>       <!-- 中风险背景 -->
+    <color name="safe_text">#5A7A5A</color>         <!-- 安全文字: 灰绿 -->
+    <color name="safe_bg">#E4ECE4</color>           <!-- 安全背景 -->
+
+    <!-- ===== 状态栏/导航栏 ===== -->
+    <color name="status_bar">#EBE3D5</color>
+
+    <!-- ===== 杂项 ===== -->
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="shadow">#33000000</color>           <!-- 柔和阴影 -->
+    <color name="toast_bg">#5C4A3A</color>           <!-- Toast 背景 -->
+    <color name="ripple">#20000000</color>           <!-- 水波纹 -->
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 旧纸张暖米色微渐变背景 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#F8F3EB"
+        android:endColor="#F1EADB"
+        android:angle="270" />
+</shape>

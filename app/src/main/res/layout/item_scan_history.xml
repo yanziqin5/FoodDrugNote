@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    历史记录卡片 Item - 复古索引卡风格
+    ID 必须与 HistoryAdapter.findViewById 一致: iv_thumb / tv_result / tv_time
+    新增 iv_risk_dot 由 Adapter 按风险着色
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_card_rounded"
+    android:elevation="1dp"
+    android:padding="12dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <!-- 风险圆点 -->
+    <View
+        android:id="@+id/iv_risk_dot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/bg_risk_dot_safe" />
+
+    <!-- 缩略图 -->
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_thumb_placeholder"
+        android:contentDescription="@string/thumb_image"
+        android:layout_marginStart="12dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="4dp">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            tools:text="含酒精成分，忌与头孢类抗生素同服..." />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_hint"
+            android:layout_marginTop="6dp"
+            tools:text="2026-07-25 14:30" />
+
+    </LinearLayout>
+
+</LinearLayout>

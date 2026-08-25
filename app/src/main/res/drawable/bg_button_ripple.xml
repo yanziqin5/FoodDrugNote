@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主按钮点击波纹 -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ripple">
+    <item android:id="@android:id/mask" android:drawable="@drawable/bg_button_primary" />
+</ripple>

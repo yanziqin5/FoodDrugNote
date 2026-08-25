@@ -1,0 +1,19 @@
+# 本地密钥配置，禁止提交
+local.properties
+
+# Android 构建产物
+*.iml
+.gradle/
+/build
+/module.json
+/captures
+.externalNativeBuild
+.cxx
+*.keystore
+!debug.keystore
+
+# IDE
+.idea/
+*.ipr
+*.iws
+.DS_Store
