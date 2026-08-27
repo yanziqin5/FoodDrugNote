@@ -25,4 +25,9 @@
     <string name="query_drug">查询</string>
     <string name="take_photo">拍照扫描</string>
     <string name="pick_from_album">相册选图</string>
+    <string name="sponsor">赞助</string>
+    <string name="sponsor_title">赞助支持</string>
+    <string name="sponsor_message">如果这个应用曾在药食安全上帮到过你，\n欢迎赞助支持作者，感谢每一份鼓励！\n\n爱发电主页：\nwww.ifdian.net/a/yanziqin5</string>
+    <string name="sponsor_go">去赞助</string>
+    <string name="sponsor_cancel">取消</string>
 </resources>

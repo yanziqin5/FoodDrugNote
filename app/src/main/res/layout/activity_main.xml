@@ -84,6 +84,24 @@
                     android:gravity="center"
                     android:elevation="1dp" />
 
+                <TextView
+                    android:id="@+id/btnSponsor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sponsor"
+                    android:textSize="12sp"
+                    android:textColor="@color/secondary"
+                    android:background="@drawable/bg_button_secondary_selector"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:elevation="1dp"
+                    android:layout_marginStart="8dp" />
+
             </LinearLayout>
 
             <!-- 手绘风分隔线 -->

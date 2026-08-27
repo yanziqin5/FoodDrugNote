@@ -89,6 +89,9 @@ class MainActivity : AppCompatActivity() {
         private val LOW_RISK_KEYWORDS = listOf(
             "适量", "少量", "不宜", "谨慎", "注意", "尽量", "少"
         )
+
+        // 爱发电赞助主页
+        private const val SPONSOR_URL = "https://www.ifdian.net/a/yanziqin5"
     }
 
     // 下面你所有原有代码全部原样保留，不改动
@@ -210,6 +213,7 @@ class MainActivity : AppCompatActivity() {
             }
             binding.btnAnalyze.setOnClickListener { startAnalyze() }
             binding.btnClearHistory.setOnClickListener { clearHistory() }
+            binding.btnSponsor.setOnClickListener { showSponsorDialog() }
             binding.btnCopy.setOnClickListener { copyResult() }
             binding.btnRetry.setOnClickListener { startAnalyze() }
             binding.btnQuery.setOnClickListener { queryByName() }
@@ -735,6 +739,27 @@ class MainActivity : AppCompatActivity() {
             ImageCacheManager.enforceCapacity(applicationContext, validPaths)
         }
         super.onDestroy()
+    }
+
+    // ========== 赞助支持 ==========
+
+    /**
+     * 赞助弹窗：展示爱发电主页，点击“去赞助”打开浏览器跳转
+     */
+    private fun showSponsorDialog() {
+        AlertDialog.Builder(this)
+            .setTitle(R.string.sponsor_title)
+            .setMessage(R.string.sponsor_message)
+            .setPositiveButton(R.string.sponsor_go) { _, _ ->
+                try {
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(SPONSOR_URL))
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    Toast.makeText(this, "无法打开浏览器，请手动访问 ${SPONSOR_URL.replace("https://", "")}", Toast.LENGTH_LONG).show()
+                }
+            }
+            .setNegativeButton(R.string.sponsor_cancel, null)
+            .show()
     }
 
     // ========== 免责声明 ==========

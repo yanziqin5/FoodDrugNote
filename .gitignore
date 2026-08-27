@@ -17,3 +17,7 @@ local.properties
 *.ipr
 *.iws
 .DS_Store
+
+# app build outputs
+app/build/
+**/build/
