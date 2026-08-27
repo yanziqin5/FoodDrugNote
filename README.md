@@ -115,3 +115,15 @@ A: 不能，核心识别依赖豆包云端大模型，必须联网；历史记�
 本软件仅作为个人学习、技术演示用途，所有分析结果均来自大模型对公开资料的整理，
 **不构成任何医疗建议**。服药、治疗相关决策请务必咨询专业医师或药师。
 开发者不对因使用本软件产生的任何后果承担责任。
+
+## 赞助
+
+如果这个项目对你有帮助，欢迎赞助支持，感谢你的每一份鼓励：
+
+<a href="https://www.ifdian.net/a/yanziqin5"><img src="https://img.shields.io/badge/赞助-爱发电-946ce6" alt="爱发电"></a>
+
+[去爱发电赞助我](https://www.ifdian.net/a/yanziqin5)
+
+## License
+
+本项目基于 [MIT License](LICENSE) 开源。
